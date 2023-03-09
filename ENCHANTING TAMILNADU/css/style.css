@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;500&family=Roboto+Condensed:wght@400;700&family=Roboto+Mono:wght@500&display=swap');
+/* general and heading styles */
+/* newly updated */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+   
+}
+
+
+h2,
+h3,
+h4,
+h5 {
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+h1 {
+    background-color: rgb(61, 22, 60);
+    color: white;
+    text-align: center;
+    padding: 48px;
+    font-size: 45px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 66px;
+    color: rgb(121, 21, 85);
+}
+h4 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 32px;
+    width: 90%;
+    font-weight: 300;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 20px;
+}
+p {
+    padding-top: 25px;
+    font-weight: 300;
+    font-size: 21px;
+}
+
+/* button styles */
+.button {
+    background-color: rgb(112, 32, 83);
+    color: white;
+    padding: 3% 6%;
+    font-weight: 300;
+    border: none;
+    margin-top: 20px;
+    font-size: 18px;
+}
+/* div card styles */
+.card-group {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding-top:50px;
+    padding-left:100px;
+    padding-right:100px;
+    width: 89%;
+    margin:auto 0;
+     
+}
+
+.card {
+    display: inline-block;
+    width: 31%;
+    padding:40px 15px;
+ 
+
+}
+
+.card p {
+    font-size: 19px;
+    font-weight: 300;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(12, 11, 11);
+}
+
+.card img {
+    width: 100%;
+
+}
+
+/* paragraph styles */
+
+.content {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 29px;
+    text-align: justify;
+    font-weight: 300;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 1% 12%;
+    padding-top: 3%;
+    color: rgb(37, 37, 37);
+    line-height: 1.5;
+}
+/* footer styles */
+footer {
+    background-color: rgb(112, 32, 83);
+    color: white;
+    margin-top: 83px;
+    padding: 20px 113px;
+ 
+}
+footer h3 {
+    font-weight: 800;
+    font-size: 22px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+footer p {
+    padding-top: 2px;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
