@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto+Mono:wght@500&display=swap');
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    background-color: rgb(45,94,144);
+    color:white;
+    padding:30px;
+    text-align: center;
+    font-weight: 700;
+    font-size:20px;
+}
+
+
+main div h1{
+    background-color:rgb(45,94,144);
+    color:white;
+    font-size: large;
+    padding:15px;
+    float:left;
+    font-family: "Roboto", sans-serif;
+    width:100%;
+}
+main div p{
+    font-size: 17px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight:400;
+    padding:15px;
+    padding-top: 65px;
+    padding-bottom: 10px;
+    line-height: 25px;
+    margin: 10px;
+    text-align: justify;
+}
+main{
+    margin:28px 150px 30px 150px;
+
+
+}
+.box
+{
+    margin:10px;
+    margin-bottom: 20px;
+    background-color: rgb(246,246,246);
+    border:1px solid   rgb(45,94,144);
+}
+.section_one
+{
+float:left;
+width:60%;
+
+}
+.section_two
+{
+    float:right;
+    width:40%;
+  
+}
+.section_two div{
+    margin-bottom: 27px;
+}
