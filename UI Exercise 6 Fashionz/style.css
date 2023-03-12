@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+/* logo styles */
+.logo {
+  height: 70px;
+}
+body {
+  background-color: rgb(42, 43, 48);
+}
+/* menu styles starting */
+.main-menu {
+  position: absolute;
+  right: 112px;
+  top: 68px;
+}
+/* icon style */
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgb(216, 216, 216);
+}
+.icon:hover .menu {
+  display: block;
+}
+/* menu list */
+.menu {
+  background-color: rgb(238, 238, 238);
+  display: none;
+  margin: 0;
+  z-index: 1;
+  font-weight: 700;
+  position: absolute;
+  right: 8px;
+  top: 90px;
+  padding-top: 10px;
+}
+.menu li {
+  padding: 15px;
+  width: 250px;
+}
+.menu li:hover {
+  background-color: white;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  width: 100%;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.layer {
+  height: 100px;
+  padding: 10px;
+}
+/* menu styles ending */
+.content {
+  margin: 74px 120px 0px 140px;
+  background-color: rgb(42, 43, 48);
+}
+/* card styles start */
+.dress-card {
+  position: relative;
+  width: 22%;
+  margin-bottom: 54px;
+  display: inline-block;
+}
+
+.card-img {
+  width: 100%;
+  padding: 90px 40px 90px 40px;
+  background-color: rgb(36, 37, 42);
+}
+.card-img img {
+  height: 243px;
+  object-fit: contain;
+}
+.card-content {
+  font-weight: 200;
+  color: rgb(167, 167, 167);
+}
+/* icon styles starts */
+.star-icon {
+  position: absolute;
+  color: rgb(144, 176, 133);
+  font-size: 25px;
+  top: 14px;
+  right: 20px;
+}
+
+.size-icon {
+  position: absolute;
+  background-color: rgb(144, 176, 133);
+  border: none;
+  padding: 14px;
+  border-radius: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  bottom: 105px;
+  right: 20px;
+}
+/* icon styles ends */
+.card-content h3 {
+  font-weight: 200;
+  font-size: 23px;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+}
+.card-content p {
+  margin-top: 7px;
+  font-size: 21px;
+}
+
+.card-content button {
+  margin-top: 10px;
+  background-color: rgb(42, 43, 48);
+  color: rgb(167, 167, 167);
+  border: 1px solid rgb(167, 167, 167);
+  padding: 10px 14px 10px 14px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dress-card:nth-child(4n + 2) {
+  margin-left: 51px;
+}
+.dress-card:nth-child(4n + 3) {
+  margin-left: 51px;
+  margin-right: 51px;
+}
+/* card styles end */
+/* footer styles */
+.footer {
+  margin-left: 0px;
+  background-color: black;
+  text-align: center;
+  padding: 34px;
+  border-bottom: 4px solid rgb(255, 255, 255);
+}
+.footer button {
+  margin-right: 50px;
+  display: inline-block;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+}
