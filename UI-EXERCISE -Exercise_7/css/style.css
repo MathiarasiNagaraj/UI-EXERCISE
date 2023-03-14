@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+body {
+  background-color: rgb(9, 7, 7);
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+}
+html
+{
+  font-size: 10px;
+}
+.title-text
+ p {
+  font-size: 2.5rem;
+  font-weight: 700;
+position: absolute;
+top:55px;
+right: 180px;
+
+}
+.title-text h1 {
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+  font-size: 17rem;
+  font-weight: 300;
+  padding-top: 130px;
+}
+.bold-word {
+  font-weight: bold;
+}
+.title-text h3 {
+  font-size: 55px;
+  color: rgb(207, 207, 207);
+
+}
+.blue-color {
+  color: rgb(91, 144, 224);
+}
+.product-group {
+  padding: 150px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+
+}
+.product-group div {
+  flex-basis: 31.8%;
+}
+.features h4 {
+  font-size: 5rem;
+}
+.green-color {
+  color: rgb(195, 232, 146);
+  letter-spacing: -1px;
+}
+.features h4 {
+  color: rgb(207, 207, 207);
+}
+.logos {
+  padding-top: 100px;
+  padding-bottom: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.features .logos img {
+  max-width: 140px;
+}
+.adidas {
+  font-size: 20px;
+  max-height: 100px;
+  padding: 0px 23px;
+}
+.mont {
+  padding: 0px 30px;
+}
+.short {
+  display: inline-block;
+  width: 30px;
+  margin-right: 30px;
+}
+.long {
+  display: inline-block;
+  width: 236px;
+}
+.icons {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  column-gap: 18px;
+  justify-content: center;
+}
+.icon {
+  padding: 10px 13px;
+  font-size: 30px;
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.footer p {
+  font-size: 23px;
+  font-weight: bold;
+  padding-bottom: 150px;
+}
+
+/* media query */
+@media only screen and (max-width: 576px) {
+  body {
+width: 90%;
+  }
+  .title-text h1{
+    font-size: 4.5rem;
+  }
+  .title-text h3
+  {
+  font-size: 2.9rem;
+  margin-top: 20px;
+  }
+  .title-text p
+  {
+position: static;
+font-size: 2rem;
+padding-top: 20px;
+
+
+  }
+  .product-group div {
+  flex-basis: 100%;
+  column-gap: 3px;
+  }
+  .features h4 {
+font-size: 3rem;
+padding: 0 20px;
+  }
+  .logos {
+    gap:70px;
+   
+  }
+  .features .logos img {
+    max-width: 100px;
+  }
+  .footer p {
+    padding-bottom: 65px;
+  }
+  .short {
+    display: inline-block;
+    width: 30px;
+    margin-right: 30px;
+  }
+  .long {
+    display: inline-block;
+    width: 160px;
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1400px) {
+}
