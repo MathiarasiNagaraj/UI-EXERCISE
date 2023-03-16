@@ -9,42 +9,41 @@ img {
 
 body {
   background-color: rgb(9, 7, 7);
-  width: 80%;
-  margin: 0 auto;
+  display: flex;
+  padding: 0 180px;
+  flex-wrap: wrap;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
   font-family: "Roboto Condensed", sans-serif;
-  color: white;
+  color: #fff;
 }
-html
-{
+html {
   font-size: 10px;
 }
-.title-text
- p {
+.title p {
   font-size: 2.5rem;
   font-weight: 700;
-position: absolute;
-top:55px;
-right: 180px;
-
+  position: absolute;
+  top: 55px;
+  right: 180px;
 }
-.title-text h1 {
+.title h1 {
   margin-top: 10rem;
   margin-bottom: 1rem;
   font-size: 17rem;
   font-weight: 300;
   padding-top: 130px;
 }
-.bold-word {
-  font-weight: bold;
+.designer-name {
+  font-weight: 700;
 }
-.title-text h3 {
+.title h3 {
   font-size: 55px;
-  color: rgb(207, 207, 207);
-
+  color: #CFCFCF;
 }
-.blue-color {
-  color: rgb(91, 144, 224);
+.blue-word {
+  color: #5B90E0;
 }
 .product-group {
   padding: 150px 0px;
@@ -52,21 +51,19 @@ right: 180px;
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 30px;
-
 }
-.product-group div {
+.product-group .product-card {
   flex-basis: 31.8%;
 }
-.features h4 {
+.brand-logos h4 {
   font-size: 5rem;
+  color:#CFCFCF;
 }
-.green-color {
-  color: rgb(195, 232, 146);
+.green-word {
+  color: #C3E892;
   letter-spacing: -1px;
 }
-.features h4 {
-  color: rgb(207, 207, 207);
-}
+
 .logos {
   padding-top: 100px;
   padding-bottom: 280px;
@@ -75,7 +72,7 @@ right: 180px;
   align-items: center;
   justify-content: space-evenly;
 }
-.features .logos img {
+.brand-logos .logos img {
   max-width: 140px;
 }
 .adidas {
@@ -86,12 +83,12 @@ right: 180px;
 .mont {
   padding: 0px 30px;
 }
-.short {
+.short-divider {
   display: inline-block;
   width: 30px;
   margin-right: 30px;
 }
-.long {
+.long-divider {
   display: inline-block;
   width: 236px;
 }
@@ -103,72 +100,79 @@ right: 180px;
   justify-content: center;
 }
 .icon {
-  padding: 10px 13px;
-  font-size: 30px;
+  padding: 14px 15.8px;
+  font-size: 24px;
   object-fit: cover;
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 50%;
+}
+.icon:last-child
+{
+  font-family: serif"
 }
 .footer p {
   font-size: 23px;
-  font-weight: bold;
+  font-weight: 600;
   padding-bottom: 150px;
 }
 
 /* media query */
-@media only screen and (max-width: 576px) {
-  body {
-width: 90%;
-  }
-  .title-text h1{
+@media only screen and (max-width: 768px) {
+   body {
+
+
+    display: flex;
+    padding: 0 18px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff;
+  } 
+  .title h1 {
     font-size: 4.5rem;
   }
-  .title-text h3
-  {
-  font-size: 2.9rem;
-  margin-top: 20px;
+  .title h3 {
+    font-size: 2.9rem;
+    margin-top: 20px;
   }
-  .title-text p
-  {
-position: static;
-font-size: 2rem;
-padding-top: 20px;
-
-
+  .title p {
+    position: static;
+    font-size: 2rem;
+    padding-top: 20px;
   }
-  .product-group div {
-  flex-basis: 100%;
-  column-gap: 3px;
+  .product-group .product-card{
+    flex-basis: 100%;
+    column-gap: 3px;
   }
-  .features h4 {
-font-size: 3rem;
-padding: 0 20px;
+  .brand-logos h4 {
+    font-size: 2.5rem;
+    padding: 0 20px;
   }
   .logos {
-    gap:70px;
-   
+    gap: 70px;
+    padding-bottom: 120px;
   }
-  .features .logos img {
+  .brand-logos .logos img {
     max-width: 100px;
+  }
+  .mont {
+    padding: 0px 10px;
+  }
+  .icon
+  {
+    font-size:13px;
   }
   .footer p {
     padding-bottom: 65px;
   }
-  .short {
+  .short-divider {
     display: inline-block;
     width: 30px;
     margin-right: 30px;
   }
-  .long {
+  .long-divider {
     display: inline-block;
     width: 160px;
   }
-}
-@media only screen and (max-width: 768px) {
-}
-@media only screen and (max-width: 992px) {
-}
-@media only screen and (max-width: 1200px) {
-}
-@media only screen and (max-width: 1400px) {
 }
