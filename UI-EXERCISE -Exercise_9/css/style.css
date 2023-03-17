@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(/assets/images/space_Background.jpg.webp);
+}
+
+.earth {
+  max-height: 300px;
+  position: absolute;
+  top: 350px;
+  left: 700px;
+  animation: earth 5s infinite;
+}
+.astronet-image {
+  max-width: 170px;
+  position: absolute;
+  left: 1200px;
+  top: 700px;
+  animation: astronet 5s infinite;
+  transform-style: preserve-3d;
+}
+.satelite-image {
+  max-width: 350px;
+  top: 480px;
+  left: 990px;
+  position: absolute;
+  animation: satellite 10s infinite;
+}
+.image-container .bounce{
+  position: absolute;
+  font-size: 50px;
+  color:#fff;
+  top: 80px;
+  left: 50%;
+  translate: -50%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, #f6f2f2d3);
+}
+.bounce p
+{
+  display: inline-block;
+  animation: bounce 1s infinite;
+  translate:  translateY(-40px);
+}
+@keyframes bounce {
+  0%{
+    transform: translateY(-20px);
+  }
+  25% {
+      transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
+}
+
+/* animation styles */
+@keyframes earth {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes satellite {
+  0% {
+    left: 990px;
+    top: 480px;
+    transform: rotate(25deg);
+  }
+  20% {
+    left: 980px;
+    top: 100px;
+    transform: rotate(50deg);
+  }
+  40% {
+    left: 380px;
+    top: 100px;
+    transform: rotate(70deg);
+  }
+  60% {
+    left: 380px;
+    top: 700px;
+    transform: rotate(180deg);
+  }
+  80% {
+    left: 920px;
+    top: 700px;
+    transform: rotate(250deg);
+  }
+  100% {
+    left: 990px;
+    top: 480px;
+    transform: rotate(335deg);
+  }
+}
+@keyframes astronet {
+  0% {
+    left: 1200px;
+    top: 700px;
+    transform: rotate(25deg);
+  }
+  20% {
+    left: 1150px;
+    top: 700px;
+  }
+}
