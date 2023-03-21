@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shapes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>MATH KIDS</h1>
+        <h1>KIDS LEARNING APP</h1>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- shape container start -->
+      <section class="shape-container">
+        <h1>1. Choose a Shape</h1>
+
+        <div class="shapes">
+          <div id="Circle" class="shape" name="circle">
+            <img
+              src="/assets/images/icons8-done-60.png"
+              class="tick circle_tick"
+              alt="tick mark"
+            />
+          </div>
+          <div id="triangle-wrapper" class="shape" name="triangle">
+            <div id="Triangle">
+              <img
+                src="/assets/images/icons8-done-60.png"
+                class="tick triangle_tick"
+                alt="tick mark"
+              />
+            </div>
+          </div>
+
+          <div id="Square" class="shape" name="square">
+            <img
+              src="/assets/images/icons8-done-60.png"
+              class="tick square_tick"
+              alt="tick mark"
+            />
+          </div>
+        </div>
+
+        <button class="next-button">NEXT</button>
+      </section>
+      <!-- shape container end -->
+      <!--========================= input container start =========================-->
+      <section class="input-container">
+        <h1 id="square-input">2. Enter Side</h1> 
+        <h1 id="circle-input">2. Enter Radius</h1>
+        <h1 id="triangle-input">2. Enter Side(Base & Height)</h1>
+        <div id="input-box">
+          <input type="text" id="input-value" autocomplete="off"/>
+        </div>
+        <button class="calculate-button">Calculate</button>
+      </section> 
+      <!--========================= input container end =========================-->
+      <div class="answer-section">
+        <div class="answer-section-div">
+
+      </div>
+      </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
