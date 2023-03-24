@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+    color: white;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+/* header styles */
+header {
+  background-color: #3b1c67;
+  padding: 33px;
+  text-transform: uppercase;
+ 
+}
+header h1 {
+  font-size: 25px;
+  font-weight: 300;
+}
+/* card styles */
+.card-row {
+  margin: 68px 95px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+/* Single card styles */
+.card {
+  flex-basis: 30.7%;
+  display: flex;
+  padding: 15px;
+  padding-bottom: 19px;
+  gap: 20px;
+  font-size:19px;
+  font-weight: 300;
+  background-color: #4c67b4;
+  color: #fff;
+}
+
+.name-container 
+{
+  align-self: center;
+}
+/* user name style */
+.name-container p:first-child
+{
+  font-weight: 500;
+}
+/* user mail style */
+.name-container p:last-child
+{
+  font-size:15px;
+  color:rgb(230,236,246);
+}
+/* image styles */
+.img-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
