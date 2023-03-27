@@ -36,7 +36,7 @@ const Calculator = {
         alert("Enter a valid number");
     }
 }
-console.log(Calculator.add('10', 12));
+console.log(Calculator.add('10', 12));//it will throw an error
 console.log(Calculator.subtract(Calculator.number1, Calculator.number2));
 console.log(Calculator.multiply(Calculator.number1, Calculator.number2));
 console.log(Calculator.divide(Calculator.number1, Calculator.number2))
