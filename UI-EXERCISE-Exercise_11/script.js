@@ -37,6 +37,9 @@ const Calculator = {
     }
 }
 console.log(Calculator.add('10', 12));//it will throw an error
+//calling subtract 
 console.log(Calculator.subtract(Calculator.number1, Calculator.number2));
+//calling multiply
 console.log(Calculator.multiply(Calculator.number1, Calculator.number2));
+//calling divide
 console.log(Calculator.divide(Calculator.number1, Calculator.number2))
