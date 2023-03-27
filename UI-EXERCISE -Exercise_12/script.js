@@ -1,18 +1,25 @@
+// selecting all shapes
 triangle = document.querySelector("#Triangle");
 square = document.querySelector("#Square");
 circle = document.querySelector("#Circle");
+//selecting buttons
 next_button = document.querySelector(".next-button");
 calculate_button = document.querySelector(".calculate-button");
-tick = document.querySelector(".tick");
+//selecting tickmarks
+circletick = document.querySelector(".circle_tick");
+squaretick = document.querySelector(".square_tick");
+triangletick = document.querySelector(".triangle_tick");
+//selecting shape container
 shapeContainer = document.querySelector(".shape-container");
 inputContainer = document.querySelector(".input-container");
 resultContainer = document.querySelector(".answer-section-div");
-
+//selecting each input header for each shape
 circleInput = document.getElementById("circle-input");
 squareInput = document.getElementById("square-input");
 triangleInput = document.getElementById("triangle-input");
-
+//selecting input box
 inputbox = document.querySelector("#input-value");
+// circle class
 class Circle {
   constructor(side) {
     this.side = side;
@@ -26,6 +33,7 @@ class Circle {
     return (2 * Math.PI * this.side).toFixed();
   }
 }
+//triangle class
 class Triangle {
   constructor(side) {
     this.side = side;
@@ -39,6 +47,7 @@ class Triangle {
     return (3 * this.side).toFixed();
   }
 }
+//square class
 class Square {
   constructor(side) {
     this.side = side;
@@ -52,32 +61,38 @@ class Square {
     return (4 * this.side).toFixed();
   }
 }
+//shape object for selecting each object based on local storage and class name
 let shapeobject = {
   "Equilateral Triangle": Triangle,
-  Square: Square,
-  Circle: Circle,
+  "Square": Square,
+  "Circle": Circle,
 };
-
+//adding click event to shape
+//storing the selected shape in local storage
 triangle.addEventListener("click", (event) => {
-  tick.style.opacity = 0;
-  event.target.style.opacity = 1;
+  circletick.style.opacity = 0;
+  squaretick.style.opacity = 0;
+  triangletick.style.opacity = 1;
   localStorage.setItem("shape", "Equilateral Triangle");
   next_button.style.opacity = 1;
 });
 square.addEventListener("click", (event) => {
-  tick.style.opacity = 0;
-  event.target.style.opacity = 1;
+  circletick.style.opacity = 0;
+  squaretick.style.opacity = 1;
+  triangletick.style.opacity = 0;
   localStorage.setItem("shape", "Square");
   next_button.style.opacity = 1;
 });
 circle.addEventListener("click", (event) => {
-  tick.style.opacity = 0;
-  event.target.style.opacity = 1;
+  circletick.style.opacity = 1;
+  squaretick.style.opacity = 0;
+  triangletick.style.opacity = 0;
   localStorage.setItem("shape", "Circle");
   console.log(localStorage.getItem("shape"));
   next_button.style.opacity = 1;
 });
-
+//adding event to next button 
+//onclick the heading only should change
 next_button.addEventListener("click", () => {
   shapeContainer.style.display = "none";
   resultContainer.style.display = "none";
@@ -98,6 +113,7 @@ next_button.addEventListener("click", () => {
     triangleInput.style.display = "none";
   }
 });
+//creating table and changing only the formula
 calculate_button.addEventListener("click", () => {
   let storedObj = localStorage.getItem("shape");
 
@@ -129,6 +145,8 @@ calculate_button.addEventListener("click", () => {
     obj.calculateArea() +
     " sq cm</td>  </tr>" +
     "<tr><td>PERIMETER</td><td>" +
+
+    
     obj.perimeterFormula +
     "</td> <td>" +
     obj.calculatePerimeter() +
@@ -142,6 +160,7 @@ calculate_button.addEventListener("click", () => {
 
   console.log(resultContainer.innerHTML);
 });
+//on start again the first section should display
 startAgain_button = document.querySelector(".start-again");
 startAgain = () => {
   shapeContainer.style.display = "block";
